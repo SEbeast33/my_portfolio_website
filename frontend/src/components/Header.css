@@ -1,0 +1,195 @@
+.header_container{
+width: 100%;
+height: 5.5rem;
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+
+}
+.header{
+    width: 82rem;
+height: 2.6875rem;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+
+
+}
+
+.brandlogo{
+    width: 12.625rem;
+height: 2.4375rem;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+}
+
+.brandname{
+    color: #000;
+
+    font-family: "Inter-ExtraBold", Helvetica;
+font-size: 1.8125rem;
+font-style: normal;
+font-weight: 770;
+line-height: normal;
+letter-spacing: 0.01813rem;
+align-self: center;
+}
+
+.nav_components{
+    width: 35.1875rem;
+height: 2.4375rem;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+
+}
+
+.navitems{
+   
+   
+text-align: center;
+font-family: 'Inter', sans-serif;
+font-size: 1.1875rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.01188rem;
+
+
+}
+a{
+    text-decoration: none; 
+    color: #8D868D;
+  background: none; 
+  cursor: pointer; 
+ 
+  border: none; 
+  outline: none; 
+ 
+
+}
+
+ a::before {
+    display: block;
+    content: '';
+    width: 0.4375rem;
+height: 0.4375rem;
+    background-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    
+    opacity: 0; /* Initially hidden */
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+ a:hover {
+    color:#FF5679; /* New link color on hover */
+}
+ a:hover::before {
+    background-color:#FF5679; /* Dot color on hover */
+    opacity: 1; /* Show the dot on hover */
+}
+
+.letstalkbutton{
+    width: 6.1875rem;
+    height: 2.6875rem;
+}
+
+.lets_talk_button {
+    background-color:#FF5679; /* Button background color */
+    color: #FFF;
+text-align: center;
+font-family: "Inter-SemiBold", Helvetica;
+font-size: 0.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.00938rem;
+    border: none; /* Remove border */
+    width: 6.1875rem;
+    height: 2.6875rem;
+    
+    cursor: pointer; /* Add pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; 
+  }
+
+  .lets_talk_button:hover {
+    background-color: #F80A3B; /* Hover background color */
+  }
+
+  .animate_fill{
+     
+/* Initial styling */
+#logo-svg rect,
+#logo-svg ellipse {
+  fill: transparent;
+}
+
+/* Animation for Rectangle8 */
+#Rectangle8 {
+  animation: fillRectangle8 1s forwards;
+}
+
+/* Animation for Rectangle9 */
+#Rectangle9 {
+  animation: fillRectangle9 1s forwards;
+}
+
+/* Animation for Ellipse2 */
+#Ellipse2 {
+  animation: fillEllipse2 1s forwards;
+}
+
+/* Animation for Ellipse3 */
+#Ellipse3 {
+  animation: fillEllipse3 1s forwards;
+}
+
+/* Keyframes for Rectangle8 animation */
+@keyframes fillRectangle8 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #02A2AE; /* Original color */
+  }
+}
+
+/* Keyframes for Rectangle9 animation */
+@keyframes fillRectangle9 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #FF5679; /* Original color */
+  }
+}
+
+/* Keyframes for Ellipse2 animation */
+@keyframes fillEllipse2 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #FFAD14; /* Original color */
+  }
+}
+
+/* Keyframes for Ellipse3 animation */
+@keyframes fillEllipse3 {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: #F9A101; /* Original color */
+  }
+} 
+
+  }

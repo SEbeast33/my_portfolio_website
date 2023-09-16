@@ -1,0 +1,17 @@
+import img from './myimage.jpg'
+import line from './Line 1.svg'
+import insta from './insta svg.svg'
+import twitter from './twitter svg.svg'
+import linkedin from './linkedinsvg.svg'
+// import arrow from './arrow svg.svg'
+import wavehand from './wavehand svg.svg'
+import backarrow from './backward arrow.svg'
+import frontarrow from './back arrow.svg'
+import yellocircle from './yellow square.svg'
+import code from './code svg.svg'
+import arrow from './arrow wirinkled svg.svg'
+import bigline from './line big svg.svg'
+import facebook from './facebook svg.svg'
+import logo from './logo svg.svg'
+
+export {img,line,insta,twitter,linkedin,arrow,wavehand,backarrow,frontarrow,yellocircle,code,bigline,facebook,logo}

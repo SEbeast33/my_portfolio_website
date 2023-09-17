@@ -6,6 +6,8 @@ justify-content: center;
 align-items: center;
 box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
 
+
+
 }
 .header{
     width: 82rem;
@@ -14,7 +16,7 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
-
+padding-right: 2rem;
 
 }
 
@@ -46,6 +48,7 @@ display: flex;
 justify-content: space-between;
 flex-wrap: wrap;
 align-items: center;
+padding-right: 2rem;
 
 }
 
@@ -122,74 +125,4 @@ letter-spacing: 0.00938rem;
 
   .lets_talk_button:hover {
     background-color: #F80A3B; /* Hover background color */
-  }
-
-  .animate_fill{
-     
-/* Initial styling */
-#logo-svg rect,
-#logo-svg ellipse {
-  fill: transparent;
-}
-
-/* Animation for Rectangle8 */
-#Rectangle8 {
-  animation: fillRectangle8 1s forwards;
-}
-
-/* Animation for Rectangle9 */
-#Rectangle9 {
-  animation: fillRectangle9 1s forwards;
-}
-
-/* Animation for Ellipse2 */
-#Ellipse2 {
-  animation: fillEllipse2 1s forwards;
-}
-
-/* Animation for Ellipse3 */
-#Ellipse3 {
-  animation: fillEllipse3 1s forwards;
-}
-
-/* Keyframes for Rectangle8 animation */
-@keyframes fillRectangle8 {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: #02A2AE; /* Original color */
-  }
-}
-
-/* Keyframes for Rectangle9 animation */
-@keyframes fillRectangle9 {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: #FF5679; /* Original color */
-  }
-}
-
-/* Keyframes for Ellipse2 animation */
-@keyframes fillEllipse2 {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: #FFAD14; /* Original color */
-  }
-}
-
-/* Keyframes for Ellipse3 animation */
-@keyframes fillEllipse3 {
-  0% {
-    fill: transparent;
-  }
-  100% {
-    fill: #F9A101; /* Original color */
-  }
-} 
-
   }

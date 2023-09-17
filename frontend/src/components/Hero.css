@@ -1,0 +1,125 @@
+.hero_container{
+width: 100%;
+height: 35.1875rem;
+
+display: flex;
+flex-flow: row ;
+justify-content: space-around;
+}
+
+.hero_image{
+    width: 36.625rem;
+height: 35.1875rem;
+}
+
+.hero_text{
+    width: 40rem;
+height: 35.1875rem;
+padding-right: 3.38rem;
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+}
+.wavehandsvg{
+    padding-top: 4.3rem;
+}
+
+.hero__text{
+    padding-top: 4.3rem;
+width: 32.4375rem;
+height: 13.5rem;
+}
+
+.box {
+    width: 32.4375rem;
+    height: 13.5rem;
+  }
+  
+  .box .hero-text {
+    height: 216px;
+   
+    width: 523px;
+  }
+  
+  .box .text-wrapper {
+    color: #f04b6d;
+    font-family: "Inria Sans-Bold", Helvetica;
+    font-size: 50px;
+    font-weight: 700;
+    height: 60px;
+    
+    letter-spacing: 0.5px;
+    line-height: normal;
+   
+    text-align: left;
+    
+    white-space: nowrap;
+  }
+  
+  .box .professional-web {
+    color: #000000;
+    font-family: "Inria Sans-Bold", Helvetica;
+    font-size: 65px;
+    font-weight: 700;
+    height: 156px;
+  
+    letter-spacing: 0.65px;
+    line-height: normal;
+  
+    
+    width: 519px;
+  }
+  
+.resume_section{
+    padding-left: 0.5rem;
+    width: 27.6875rem;
+height: 10.25rem;
+box-shadow: 0  1.5px 0 rgba(0,0,0,.15);
+display: flex;
+flex-flow: row;
+}
+
+
+.resume_button{
+    width: 11.0625rem;
+    height: 4.3125rem;
+  align-self: flex-end;
+  padding-bottom: 1.12rem;
+}
+
+.resume__button {
+    background-color:#FF5679; /* Button background color */
+    color: #FFF;
+    text-align: center;
+font-family: "Inter-SemiBold", Helvetica;
+font-size: 1.69rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 0.00938rem;
+    border: none; /* Remove border */
+    width: 11.0625rem;
+    height: 4.3125rem;
+    
+    cursor: pointer; /* Add pointer cursor on hover */
+    border-radius: 1.4rem; /* Rounded corners */
+    transition: background-color 0.3s ease; 
+  }
+
+  .resume__button:hover {
+    background-color: #40a9e1e0; /* Hover background color */
+  }
+
+  .arrow{
+    width: 12rem;
+height: 8rem;
+  }
+
+ .social-icons {
+    width: 22.875rem;
+    height: 3.9375rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+

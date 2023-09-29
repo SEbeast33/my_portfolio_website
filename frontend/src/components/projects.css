@@ -1,0 +1,102 @@
+.projects_section{
+   display: flex;
+   flex-flow: column ;
+   width: 100%;
+    height: 46.25rem;
+    align-items: center;
+    padding-top: 4rem;
+    justify-content: space-between;
+
+}
+
+.section_title{
+    width: 47.25rem;
+height: 10.0625rem;
+display: flex;
+justify-content: center;
+flex-flow: row wrap;
+
+}
+
+.projects_text{
+    color: #FF5679;
+    text-align: center;
+    font-family: 'DM Sans-bold', sans-serif;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.03125rem;
+}
+
+.defines_progress_text{
+    padding-left: 0.3rem;
+    color: #000000;
+    text-align: center;
+    font-family: 'DM Sans-bold ', sans-serif;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.03125rem;
+}
+
+.explore_journey_text{
+    color: #FF5679;
+    text-align: center;
+    font-family: 'DM Sans-bold', sans-serif;
+    font-size: 3.125rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.03125rem;
+}
+
+.project_cards_section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 82.875rem;
+height: 32.25rem;
+  padding-top: 5rem;
+  
+}
+
+
+/* Media query for screens with a maximum width of 962px */
+@media screen and (max-width: 962px) {
+    .projects_section {
+      height: auto; /* Let height adjust based on content */
+      padding: 1rem; /* Adjust padding as needed */
+      justify-content: center; /* Center align content */
+    }
+  
+    .section_title {
+      /* Adjust styles as needed */
+      width: 100%; /* Use full width */
+      height: auto; /* Let height adjust based on content */
+      justify-content: center; /* Center align content */
+    }
+  
+    .projects_text {
+      /* Adjust styles as needed */
+      font-size: 2rem; /* Adjust font size */
+      text-align: center; /* Center align text */
+    }
+  
+    .defines_progress_text,
+    .explore_journey_text {
+      /* Adjust styles as needed */
+      font-size: 2rem; /* Adjust font size */
+      text-align: center; /* Center align text */
+    }
+  
+    .project_cards_section {
+      /* Adjust styles as needed */
+      width: 100%; /* Use full width */
+      height: auto; /* Let height adjust based on content */
+      padding-top: 4rem; /* Adjust padding as needed */
+      justify-content: center; /* Center align content */
+    }
+  }
+  

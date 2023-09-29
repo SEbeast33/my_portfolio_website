@@ -1,10 +1,13 @@
 .header_container{
+
 width: 100%;
 height: 5.5rem;
 display: flex;
 justify-content: center;
 align-items: center;
 box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
+position: fixed;
+backdrop-filter: blur(4.5px);
 
 
 
@@ -17,6 +20,7 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
 padding-right: 2rem;
+
 
 }
 
@@ -126,3 +130,206 @@ letter-spacing: 0.00938rem;
   .lets_talk_button:hover {
     background-color: #F80A3B; /* Hover background color */
   }
+
+  /* .open_humberger{
+    display: none;
+  } */
+
+  .menu-container{
+    display: none;
+  }
+
+ .mobile-menu{
+    display: none;
+ }
+
+/* @media screen  and (max-width: 962px) {
+    .header_container{
+      width: 26.6rem;
+        height: 4.8125rem;
+        display: flex;
+       
+        
+        align-items: center;
+    }
+
+    .header{
+        padding: 0;
+        width:26.6rem ;
+         height: 4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+    }
+  .brandlogo{
+    padding-left: 1rem;
+   display: flex;
+  
+    width: 12rem;
+height: 1.90325rem;
+
+  }
+
+  .brandname{
+    font-size: 1.5rem;
+  }
+
+
+    .nav_components{
+        display: none;
+    }
+    .lets_talk_button{
+        display: none;
+    }
+
+    .letstalkbutton{
+        display: none;
+    }
+
+    .menu-container{
+       
+       display: flex;
+     overflow-y: hidden;
+     width: 3.125rem;
+     height: 3.125rem;
+        
+       
+    }
+
+    .open_humberger{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        
+       
+        width: 3.125rem;
+        height: 3.125rem;
+       
+       background-color: #EE365C;
+       border-radius: 50%;
+    }
+
+
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 32.0625rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(175deg, rgba(231, 162, 242, 0.32) 3.81%, rgba(240, 83, 121, 0.27) 109.83%);
+        backdrop-filter: blur(4.5px);
+       
+      
+         
+        }
+      
+  .close_humberger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+     width: 3.125rem;
+     height: 3.125rem;
+     width: 3.125rem;
+     height: 3.125rem;
+    
+    
+    border-radius: 50%;
+  }
+
+
+    
+} */ 
+
+
+@media screen and (max-width: 962px) {
+  .header_container {
+    width: 100%; 
+    height: 4.8125rem; 
+    display: flex;
+    align-items: center;
+    position: fixed;
+  
+    
+  }
+
+  .header {
+   padding-right: 0.8rem;
+    width: 100%; 
+    height: 4rem; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   
+  }
+
+  .brandlogo {
+    padding-left: 1rem;
+    display: flex;
+    width: auto; 
+    height: 1.90325rem;
+  }
+
+  .brandname {
+    font-size: 1.5rem;
+  }
+
+  .nav_components,
+  .lets_talk_button,
+  .letstalkbutton {
+    display: none;
+  }
+
+  .menu-container {
+    margin-right: 0.1rem;
+    display: flex;
+    overflow-y: hidden;
+    width: auto; 
+    height: 3.125rem;
+  }
+
+  .open_humberger {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: #EE365C;
+    border-radius: 50%;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    background: linear-gradient(175deg, rgba(231, 162, 242, 0.32) 3.81%, rgba(240, 83, 121, 0.27) 109.83%);
+    backdrop-filter: blur(4.5px);
+  }
+
+  .close_humberger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+  }
+  .navitems{
+    padding: 1rem;
+  }
+}

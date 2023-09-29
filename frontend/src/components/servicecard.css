@@ -1,0 +1,125 @@
+.card{
+    width: 18.375rem;
+height: 17.3125rem;
+border-radius: 1.3125rem 1.3125rem 0rem 0rem;
+border: 0.5px solid #F6ECEC;
+background: #FFF;
+box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
+display: flex;
+flex-flow: column;
+justify-content: space-around;
+align-items: center;
+padding-top: 1rem;
+}
+
+.icon_circle{
+    display: flex;
+    flex: row;
+    width: 5.0625rem;
+height: 5.0625rem;
+border-radius: 50%;
+background-color:#FFAD03;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.code_logo{
+    width: 3.125rem;
+height: 2.8125rem;
+
+}
+
+.card_title{
+height: 1.875rem;
+width: 12rem ;
+text-align: center;
+color: #000;
+font-family: Inter;
+font-size: 1.5625rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 0.01563rem;
+text-transform: capitalize;
+padding-top: 0.6rem;
+}
+.card_subtitle{
+height: 2.25rem;
+width: 14rem;
+text-align: center;
+padding-bottom: 2.9rem;
+color: #6c6e73;
+text-align: center;
+font-family: Inter;
+font-size: 0.9375rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.00938rem;
+
+}
+
+/* Media query for screens with a maximum width of 962px */
+@media screen and (max-width: 962px) {
+    .card {
+      width: 100%; /* Use full width */
+      height: auto; /* Let height adjust based on content */
+      border-radius: 1.3125rem; /* Keep the top border-radius */
+      border: 0.5px solid #F6ECEC;
+      background: #FFF;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 1rem; /* Adjust padding as needed */
+    }
+  
+    .icon_circle {
+      /* Adjust styles as needed */
+      display: flex;
+      width: 5.0625rem;
+      height: 5.0625rem;
+      border-radius: 50%;
+      background-color: #FFAD03;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .code_logo {
+      width: 3.125rem;
+      height: 2.8125rem;
+    }
+  
+    .card_title {
+      height: auto; /* Let height adjust based on content */
+      width: 100%; /* Use full width */
+      text-align: center;
+      color: #000;
+      font-family: Inter;
+      font-size: 1.5625rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.01563rem;
+      text-transform: capitalize;
+      padding-top: 0.6rem;
+    }
+  
+    .card_subtitle {
+      height: auto; /* Let height adjust based on content */
+      width: 100%; /* Use full width */
+      text-align: center;
+      padding-bottom: 1rem; /* Adjust padding as needed */
+      color: #6c6e73;
+      font-family: Inter;
+      font-size: 0.9375rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.00938rem;
+    }
+  }
+  

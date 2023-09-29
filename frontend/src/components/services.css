@@ -1,0 +1,104 @@
+
+.services_container{
+    padding-top: 2rem;
+    width: 100%;
+    height: 18.625rem;;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;}
+
+.service_text{
+    padding-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    width:  23.4375rem;
+}
+
+.service_cards{
+    display: flex;
+    flex-flow: row wrap;
+    height: 100%;
+    width: 59.625rem;
+    justify-content: space-between;
+    margin-right: 2rem;
+    align-items: center;
+}
+
+.services{
+    padding-top: 3.5rem;
+    color: #f04b6d;
+    font-family: "Inria Sans-Bold", Helvetica;
+    
+    font-size: 1.5625rem;
+    font-weight: 700;
+    letter-spacing: 0.01563rem;
+    text-transform: uppercase;
+
+    
+    
+    line-height: normal;
+   
+    text-align: left;
+    
+    white-space: nowrap;
+}
+
+.i_provide_a_wide_range{
+    color: #000000;
+    font-family: "Inria Sans-Bold", Helvetica;
+    font-size: 2.0625rem;
+    font-weight: 700;
+    height: 156px;
+  
+    letter-spacing: 0.65px;
+    line-height: normal;
+  
+    
+    text-transform: capitalize;
+  
+}
+
+/* Media query for screens with a maximum width of 962px */
+@media screen and (max-width: 962px) {
+    .services_container {
+      padding: 1rem; /* Adjust padding as needed */
+      width: 100%; /* Use full width */
+      height: auto; /* Let height adjust based on content */
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center align items */
+    }
+  
+    .service_text {
+      display: flex;
+      flex-flow: column ;
+      padding-top: 1rem; /* Adjust padding as needed */
+      width: 100%; /* Use full width */
+      height: auto; /* Let height adjust based on content */
+      align-items: center;
+    }
+  
+    .service_cards {
+      /* Adjust styles as needed */
+    
+      width: 100%; /* Use full width */
+      height: auto; /* Let height adjust based on content */
+      margin-right: 0; /* Remove right margin */
+      
+    }
+  
+    .services {
+      /* Adjust styles as needed */
+      
+      padding-top: 1rem; /* Adjust padding as needed */
+      font-size: 1.25rem; /* Adjust font size */
+      text-align: center; /* Center align text */
+    }
+  
+    .i_provide_a_wide_range {
+      /* Adjust styles as needed */
+      font-size: 1.5rem; /* Adjust font size */
+      text-align: center; /* Center align text */
+    }
+  }
+  

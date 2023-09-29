@@ -3,13 +3,15 @@ width: 100%;
 height: 35.1875rem;
 
 display: flex;
-flex-flow: row ;
+flex-flow: row wrap ;
 justify-content: space-around;
+padding-top: 5.5rem;
 }
 
 .hero_image{
     width: 36.625rem;
 height: 35.1875rem;
+box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
 }
 
 .hero_text{
@@ -121,5 +123,82 @@ height: 8rem;
     display: flex;
     justify-content: space-between;
   }
+
+
+/* Media query for screens with a maximum width of 962px */
+@media screen and (max-width: 962px) {
+  .hero_container {
+    height: auto; /* Let height adjust based on content */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    padding-top: 4rem; /* Adjust padding as needed */
+  }
+
+  .hero_image {
+    width: 100%; /* Use full width */
+    height: auto; /* Let height adjust based on content */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .hero_text {
+    width: 100%; /* Use full width */
+    height: auto; /* Let height adjust based on content */
+    padding: 1rem; 
+    text-align: center; /* Center align text */
+  }
+
+  .wavehandsvg,
+  .hero__text,
+  .box {
+    padding-top: 1rem; /* Adjust padding as needed */
+    width: 100%; /* Use full width */
+    height: auto; /* Let height adjust based on content */
+  }
+
+  .box .hero-text {
+    /* Adjust styles as needed */
+    height: auto;
+    width: 100%;
+    font-size: 32px; /* Adjust font size */
+  }
+
+  .box .professional-web {
+    /* Adjust styles as needed */
+    height: auto;
+    width: 100%;
+    font-size: 42px; /* Adjust font size */
+  }
+
+  .resume_section {
+    /* Adjust styles as needed */
+    width: 100%; /* Use full width */
+    height: auto; /* Let height adjust based on content */
+    padding: 0.5rem;
+    box-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.15);
+    flex-direction: column-reverse; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+  
+ 
+  .arrow{
+    align-self: flex-end;
+    
+  }
+
+  .resume_button {
+    width: 100%; /* Use full width */
+    height: auto; /* Let height adjust based on content */
+    align-self: center; /* Center align button */
+    padding: 1rem; /* Adjust padding as needed */
+  }
+
+  .social-icons {
+    padding-top: 1rem;
+    width: 100%; /* Use full width */
+    height: auto; /* Let height adjust based on content */
+    flex-direction: row; /* Display icons in a row */
+    justify-content: space-around; /* Center align icons */
+  }
+}
 
 

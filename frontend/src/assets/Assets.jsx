@@ -13,5 +13,11 @@ import arrow from './arrow wirinkled svg.svg'
 import bigline from './line big svg.svg'
 import facebook from './facebook svg.svg'
 import logo from './logo svg.svg'
+import ring from './ringoftext.svg'
+import admindashboard from './admin dashboard.jpeg'
+import premiere from './premiere.svg'
+import openhum from './open_humberger.svg'
+import closehum from './close_humberger.svg'
 
-export {img,line,insta,twitter,linkedin,arrow,wavehand,backarrow,frontarrow,yellocircle,code,bigline,facebook,logo}
+
+export {img,line,insta,twitter,linkedin,arrow,wavehand,backarrow,frontarrow,yellocircle,code,bigline,facebook,logo,ring,admindashboard,premiere,openhum,closehum}

@@ -1,0 +1,15 @@
+.loader_logo{
+    height: 42rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader__logo{
+    height: 4rem;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

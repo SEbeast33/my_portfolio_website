@@ -1,11 +1,12 @@
 
 .services_container{
-    padding-top: 2rem;
+    padding: 2rem;
+  
     width: 100%;
     height: 18.625rem;;
     display: flex;
     justify-content: space-around;
-    flex-flow: row wrap;}
+    flex-flow: row;}
 
 .service_text{
     padding-top: 2rem;
@@ -13,20 +14,25 @@
     flex-flow: row wrap;
     height: 100%;
     width:  23.4375rem;
+    text-align: left;
 }
 
 .service_cards{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     height: 100%;
-    width: 59.625rem;
-    justify-content: space-between;
+    width: 65%;
+    justify-content: start;
     margin-right: 2rem;
     align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+
 }
 
 .services{
-    padding-top: 3.5rem;
+   
     color: #f04b6d;
     font-family: "Inria Sans-Bold", Helvetica;
     
@@ -59,46 +65,80 @@
   
 }
 
-/* Media query for screens with a maximum width of 962px */
-@media screen and (max-width: 962px) {
-    .services_container {
-      padding: 1rem; /* Adjust padding as needed */
-      width: 100%; /* Use full width */
-      height: auto; /* Let height adjust based on content */
-      flex-direction: column; /* Stack items vertically */
-      align-items: center; /* Center align items */
+.mobileservicecards{
+  display: none;
+
+}
+.ar{
+  margin: 1rem;
+  margin-top: 0;
+  cursor: pointer;
+}
+.ar1{
+  margin: 1rem;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.scrollout{
+  width: 7rem;
+height: 0.45rem;
+border-radius: 25rem;
+box-shadow: 0 1px 10px 0 rgba(8, 7, 7, 0.15);
+border: 1px solid #dcd8d8;
+margin-bottom: 1.61rem;
+}
+
+.scrollline{
+
+width: 7rem;
+height: 0.45rem;
+border-radius: 25rem;
+background: #5CB6E8;
+
+}
+.scrollcontrol{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 2rem;
+}
+ 
+
+
+  @media  screen and (max-width:912px) {
+    .services_container{
+    flex-flow: column;
+    padding: 0;
+    height: auto;
+    align-items: center;
+    margin-top: 1rem;
     }
-  
-    .service_text {
+
+    .service_text{
+      justify-content: center;
+      padding: 0;
+      text-align: center;
+    }
+    .services{
+      text-align: center;
+      padding: 0;
+    }
+    .service_cards{
+     
+      margin: 1rem;
+      width: 85%;
+      
+    }
+    .mobileservicecards{
       display: flex;
-      flex-flow: column ;
-      padding-top: 1rem; /* Adjust padding as needed */
-      width: 100%; /* Use full width */
-      height: auto; /* Let height adjust based on content */
-      align-items: center;
     }
+
+   
   
-    .service_cards {
-      /* Adjust styles as needed */
-    
-      width: 100%; /* Use full width */
-      height: auto; /* Let height adjust based on content */
-      margin-right: 0; /* Remove right margin */
-      
-    }
   
-    .services {
-      /* Adjust styles as needed */
-      
-      padding-top: 1rem; /* Adjust padding as needed */
-      font-size: 1.25rem; /* Adjust font size */
-      text-align: center; /* Center align text */
-    }
   
-    .i_provide_a_wide_range {
-      /* Adjust styles as needed */
-      font-size: 1.5rem; /* Adjust font size */
-      text-align: center; /* Center align text */
-    }
   }
   
+

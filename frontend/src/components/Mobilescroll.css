@@ -1,0 +1,12 @@
+@media screen and (max-width: 962px){
+    .scrolldiv{
+        width: auto;
+        height: 25rem;
+        display: flex;
+        flex-flow: row;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+
+
+    }
+}

@@ -1,16 +1,41 @@
 import React from 'react'
 import './Hero.css'
-import { arrow, wavehand ,insta,twitter,facebook,linkedin } from '../assets/Assets'
+import { arrow, wavehand ,insta,twitter,facebook,linkedin, img, github } from '../assets/Assets'
 import { animate, motion } from 'framer-motion'
+import Typewriter from 'typewriter-effect';
+import { resume } from '../assets/Assets';
 
 
 
 const Hero = () => {
+
+  
+    const handleDownload = () => {
+      // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
+      const resumePath = {resume};
+  
+      // Create a link element
+      const link = document.createElement('a');
+      link.href = resumePath;
+  
+      // Set the download attribute with the desired file name
+      link.download = 'Sharad_resume.pdf';
+  
+      // Append the link to the document body
+      document.body.appendChild(link);
+  
+      // Trigger a click on the link to start the download
+      link.click();
+  
+      // Remove the link from the document
+      document.body.removeChild(link);
+    };
+
   return (
     <div className='hero_container' id='home'>
         <div className='hero_image'>
-
-         
+          
+          <img src={img} alt="" />
         </div>
         <div className="hero_text">
             <div className='wavehandsvg'>
@@ -43,26 +68,31 @@ const Hero = () => {
               <div className="hero-text">
                 <motion.div className="text-wrapper"  whileInView={{x :[190,0],opacity : [0,0.5,1],scale:[0.8,1]}} transition={{duration : 0.5}} >Hello I’m Sharad</motion.div>
                 <motion.div className="professional-web" whileInView={{x :[190,0],opacity : [0,0.5,1]}} transition={{duration : 0.7}}  >
-                 Professional
-                 <br />
-                Web developer
+                <Typewriter
+                    options={{
+                      strings: ['ReactJs', 'Django', 'Python' , 'Javascript', 'NodeJs', 'DBMS', 'JavaScript', 'ML'],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
+                  
             </motion.div>
          </div>
          </div>
             </div>
             <div className='resume_section'>
             <div className="resume_button">
-            <motion.button className='resume__button' whileHover={{scale : 1.06}}   whileTap={{ scale: 0.9 }}  whileInView={{opacity : [0,0.5,1],scale : [0.6,1]}} transition={{duration : 0.3}}>Resume</motion.button>
+            <motion.button className='resume__button' whileHover={{scale : 1.09}}  onClick={handleDownload}    whileTap={{ scale: 0.9 }}  whileInView={{opacity : [0,0.5,1],scale : [1]}}>Resume</motion.button>
           </div > 
             <div className='arrow'>
             <img src={arrow} alt="arrow"  />
             </div>
             </div>
             <motion.div className="social-icons" whileInView={{y :[70,0],opacity : [0,0.5,1]}} transition={{duration : 0.9}}>
-         <img className="insta" alt="Line svg" src={insta}/>
-         <img className="twitter" alt="Line svg" src={twitter}/>
-        <img className="linkedin" alt="Line svg" src={linkedin}/>
-        <img className="linkedin" alt="Line svg" src={facebook}/>
+         <a href="https://www.instagram.com/sharad_etthar?igshid=NGVhN2U2NjQ0Yg=="><motion.img className="insta" alt="Line svg" src={insta} whileHover={{scale:1.09}} whileTap={{ scale: 0.9 }}/></a>
+         <a href="https://github.com/SEbeast33?tab=overview&from=2023-12-01&to=2023-12-17"><motion.img className="twitter" alt="Line svg" src={twitter} whileHover={{scale:1.09}} whileTap={{ scale: 0.9 }}/></a>
+        <a href="https://www.linkedin.com/in/sharad-etthar-854649228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><motion.img className="linkedin" alt="Line svg" src={linkedin} whileHover={{scale:1.09}} whileTap={{ scale: 0.9 }}/></a>
+        <a href="https://github.com/SEbeast33?tab=overview&from=2023-12-01&to=2023-12-17"><motion.img className="linkedin" alt="Line svg" src={github} whileHover={{scale:1.09}} whileTap={{ scale: 0.9 }}/></a>
         </motion.div> 
         </div>
         

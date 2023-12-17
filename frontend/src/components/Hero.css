@@ -14,6 +14,12 @@ height: 35.1875rem;
 box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
 }
 
+.hero_image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .hero_text{
     width: 40rem;
 height: 35.1875rem;
@@ -33,22 +39,22 @@ height: 13.5rem;
 }
 
 .box {
-    width: 32.4375rem;
-    height: 13.5rem;
+    width: 16rem;
+    height: 7rem;
   }
   
   .box .hero-text {
-    height: 216px;
+    height: 7rem;
    
-    width: 523px;
+    width: 16rem;
   }
   
   .box .text-wrapper {
     color: #f04b6d;
     font-family: "Inria Sans-Bold", Helvetica;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 700;
-    height: 60px;
+    height: 3.75rem;
     
     letter-spacing: 0.5px;
     line-height: normal;
@@ -61,15 +67,15 @@ height: 13.5rem;
   .box .professional-web {
     color: #000000;
     font-family: "Inria Sans-Bold", Helvetica;
-    font-size: 65px;
+    font-size: 4.063rem;
     font-weight: 700;
-    height: 156px;
+    height: 9.75rem;
   
     letter-spacing: 0.65px;
     line-height: normal;
   
     
-    width: 519px;
+    width: 32.53rem;
   }
   
 .resume_section{
@@ -127,78 +133,71 @@ height: 8rem;
 
 /* Media query for screens with a maximum width of 962px */
 @media screen and (max-width: 962px) {
-  .hero_container {
-    height: auto; /* Let height adjust based on content */
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center align items */
-    padding-top: 4rem; /* Adjust padding as needed */
+  .hero_container{
+    flex-flow: column;
+    align-items: center;
+    height: 100vh;
+  
+    
   }
-
-  .hero_image {
-    width: 100%; /* Use full width */
-    height: auto; /* Let height adjust based on content */
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.15);
+  .hero_image{
+    
+    height: 15rem;
+    width: 15rem;
   }
-
-  .hero_text {
-    width: 100%; /* Use full width */
-    height: auto; /* Let height adjust based on content */
-    padding: 1rem; 
-    text-align: center; /* Center align text */
-  }
-
-  .wavehandsvg,
-  .hero__text,
-  .box {
-    padding-top: 1rem; /* Adjust padding as needed */
-    width: 100%; /* Use full width */
-    height: auto; /* Let height adjust based on content */
-  }
-
-  .box .hero-text {
-    /* Adjust styles as needed */
-    height: auto;
-    width: 100%;
-    font-size: 32px; /* Adjust font size */
-  }
-
-  .box .professional-web {
-    /* Adjust styles as needed */
-    height: auto;
-    width: 100%;
-    font-size: 42px; /* Adjust font size */
-  }
-
-  .resume_section {
-    /* Adjust styles as needed */
-    width: 100%; /* Use full width */
-    height: auto; /* Let height adjust based on content */
-    padding: 0.5rem;
-    box-shadow: 0 1.5px 0 rgba(0, 0, 0, 0.15);
-    flex-direction: column-reverse; /* Stack items vertically */
-    align-items: center; /* Center align items */
+  .hero_image img{
+    border-radius: 100%;
   }
   
  
-  .arrow{
-    align-self: flex-end;
-    
-  }
+ .hero_text{
+  
+  padding: 0;
+  width: auto;
+  height: 32rem;
+  flex-flow: column wrap;
+  align-items: center;
+ }
+.wavehandsvg{
+  padding: 0;
+}
+.hero__text{
+  
+  padding: 0;
+  width: auto;
+  height: 10rem;
+}
+.box{
+  width: auto;
+  height: 10rem;
+}
+.box .hero-text{
+width: auto;
+height: 5rem;
 
-  .resume_button {
-    width: 100%; /* Use full width */
-    height: auto; /* Let height adjust based on content */
-    align-self: center; /* Center align button */
-    padding: 1rem; /* Adjust padding as needed */
-  }
+}
+.box .text-wrapper{
+  font-size: 2.7rem;
+}
+.box .professional-web{
+  width: auto;
+height: auto;
+font-size: 2.7rem;
+font-weight: 700;
+text-align: center;
 
-  .social-icons {
-    padding-top: 1rem;
-    width: 100%; /* Use full width */
-    height: auto; /* Let height adjust based on content */
-    flex-direction: row; /* Display icons in a row */
-    justify-content: space-around; /* Center align icons */
-  }
+}
+.resume_section{
+  padding: 0;
+  width: 100%;
+ justify-content: center;
+ height: auto;
+  
+}
+.arrow{
+  display: none;
+}
+
 }
 
 

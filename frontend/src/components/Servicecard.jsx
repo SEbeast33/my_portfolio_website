@@ -1,11 +1,12 @@
 import React from 'react'
 import './servicecard.css'
 import { code } from '../assets/Assets'
+import { motion } from 'framer-motion'
 
 
 const Servicecard = () => {
   return (
-    <div className='card'>
+    <motion.div className='card' >
       <div className="icon_circle">
        <img src={code} alt="codelogo" className='code_logo' />
       </div>
@@ -19,7 +20,7 @@ const Servicecard = () => {
       
 
 
-    </div>
+    </motion.div>
   )
 }
 

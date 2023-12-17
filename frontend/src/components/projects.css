@@ -65,38 +65,32 @@ height: 32.25rem;
 
 /* Media query for screens with a maximum width of 962px */
 @media screen and (max-width: 962px) {
-    .projects_section {
-      height: auto; /* Let height adjust based on content */
-      padding: 1rem; /* Adjust padding as needed */
-      justify-content: center; /* Center align content */
-    }
-  
-    .section_title {
-      /* Adjust styles as needed */
-      width: 100%; /* Use full width */
-      height: auto; /* Let height adjust based on content */
-      justify-content: center; /* Center align content */
-    }
-  
-    .projects_text {
-      /* Adjust styles as needed */
-      font-size: 2rem; /* Adjust font size */
-      text-align: center; /* Center align text */
-    }
-  
-    .defines_progress_text,
-    .explore_journey_text {
-      /* Adjust styles as needed */
-      font-size: 2rem; /* Adjust font size */
-      text-align: center; /* Center align text */
-    }
-  
-    .project_cards_section {
-      /* Adjust styles as needed */
-      width: 100%; /* Use full width */
-      height: auto; /* Let height adjust based on content */
-      padding-top: 4rem; /* Adjust padding as needed */
-      justify-content: center; /* Center align content */
-    }
+ 
+  .section_title{
+    width: 100%;
+    height: auto;
+  }
+  .projects_text{
+
+   font-size: 2.4rem;
+  }
+  .defines_progress_text{
+    font-size: 1.9rem;
+    text-align: left;
+
+  }
+  .explore_journey_text{
+    font-size: 1.9rem;
+  }
+  .project_cards_section{
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+    flex-flow: row;
+    justify-content: start;
+    margin: 2rem;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
   }
   

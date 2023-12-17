@@ -1,0 +1,23 @@
+.text_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    overflow: hidden;
+    margin: 4rem;
+}
+
+.maintext{
+
+}
+.t1{
+   
+    margin: 1rem;
+}
+.t2{
+    margin: 1rem;
+}
+.t3{
+    margin: 1rem;
+}

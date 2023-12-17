@@ -8,6 +8,7 @@ align-items: center;
 box-shadow: 0 1px 3px 0 rgba(0,0,0,.15);
 position: fixed;
 backdrop-filter: blur(4.5px);
+z-index: 1;
 
 
 
@@ -69,7 +70,8 @@ letter-spacing: 0.01188rem;
 
 
 }
-a{
+
+.nav_components a{
     text-decoration: none; 
     color: #8D868D;
   background: none; 
@@ -81,7 +83,7 @@ a{
 
 }
 
- a::before {
+.nav_components a::before {
     display: block;
     content: '';
     width: 0.4375rem;
@@ -95,10 +97,10 @@ height: 0.4375rem;
     opacity: 0; /* Initially hidden */
     transition: background-color 0.3s ease, opacity 0.3s ease;
 }
- a:hover {
+.nav_components a:hover {
     color:#FF5679; /* New link color on hover */
 }
- a:hover::before {
+.nav_components a:hover::before {
     background-color:#FF5679; /* Dot color on hover */
     opacity: 1; /* Show the dot on hover */
 }
@@ -142,6 +144,10 @@ letter-spacing: 0.00938rem;
  .mobile-menu{
     display: none;
  }
+
+.active{
+  color:#FF5679;
+}
 
 /* @media screen  and (max-width: 962px) {
     .header_container{
@@ -294,6 +300,7 @@ height: 1.90325rem;
     overflow-y: hidden;
     width: auto; 
     height: 3.125rem;
+    
   }
 
   .open_humberger {
@@ -315,10 +322,12 @@ height: 1.90325rem;
     width: 50%; 
     display: flex;
     flex-direction: column;
+    z-index: 2;
     
     align-items: center;
-    background: linear-gradient(175deg, rgba(231, 162, 242, 0.32) 3.81%, rgba(240, 83, 121, 0.27) 109.83%);
-    backdrop-filter: blur(4.5px);
+    background-color: #000;
+    backdrop-filter: blur(200px);
+    
   }
 
   .close_humberger {
@@ -332,4 +341,5 @@ height: 1.90325rem;
   .navitems{
     padding: 1rem;
   }
+ 
 }

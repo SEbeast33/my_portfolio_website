@@ -18,7 +18,7 @@ const Skills = () => {
                </motion.div>
 
                <div className="textofskill">
-               Premiere
+               Premiererr
                </div>
             </motion.div>
             <div className="skills_icon_and_text_middle">

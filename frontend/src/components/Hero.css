@@ -130,6 +130,15 @@ height: 8rem;
     justify-content: space-between;
   }
 
+  .resume__button a{
+    text-decoration: none; 
+  color: #FFF;
+  background: none; 
+  cursor: pointer; 
+ 
+  border: none; 
+  outline: none; 
+  }
 
 /* Media query for screens with a maximum width of 962px */
 @media screen and (max-width: 962px) {

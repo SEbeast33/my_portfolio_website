@@ -34,24 +34,24 @@ const Projects = () => {
   }, []);
 
   const handleNext = () => {
-    let width = 330;
+    let width = 332;
     if(isSmallScreen && !isVerySmallScreen){
-      width=352
+      width=ref.current.clientWidth 
     }
     else if(isVerySmallScreen){
-        width=307
+      width=ref.current.clientWidth 
     }
     ref.current.scrollLeft = ref.current.scrollLeft - width;
 };
 
 const handlePrev = () => {
 
-    let width = 330;
+    let width = 332;
     if(isSmallScreen && !isVerySmallScreen){
-      width=352
+      width=ref.current.clientWidth 
     }
     else if(isVerySmallScreen){
-      width=307
+      width=ref.current.clientWidth 
   }
       ref.current.scrollLeft = ref.current.scrollLeft + width;
 };
@@ -69,6 +69,10 @@ const handlePrev = () => {
       </div>
         </div>
     <div className='project_cards_section' ref={ref}>
+         <Project_card />
+         <Project_card/>
+         <Project_card/>
+         <Project_card/>
          <Project_card />
          <Project_card/>
          <Project_card/>

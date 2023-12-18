@@ -2,9 +2,10 @@
    display: flex;
    flex-flow: column ;
    width: 100%;
-    height: 46.25rem;
+    height: 55rem;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
     justify-content: space-between;
 
 }
@@ -54,11 +55,15 @@ flex-flow: row wrap;
 
 .project_cards_section{
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: row ;
+    align-items: center;
+    justify-content: start;
     width: 82.875rem;
-height: 32.25rem;
-  padding-top: 5rem;
+height: 35rem;
+ 
+ 
+ scroll-behavior: smooth;
+  overflow: hidden;
   
 }
 

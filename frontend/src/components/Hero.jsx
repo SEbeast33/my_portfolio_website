@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import './Hero.css'
 import { arrow, wavehand ,insta,twitter,facebook,linkedin, img, github } from '../assets/Assets'
 import { animate, motion } from 'framer-motion'
@@ -7,19 +7,20 @@ import { resume } from '../assets/Assets';
 
 
 
-const Hero = () => {
 
-  
+const Hero = () => {
+     
+ 
     const handleDownload = () => {
       // Replace 'path/to/your/resume.pdf' with the actual path to your resume file
-      const resumePath = {resume};
+      const resumePath = {resume} ;
   
       // Create a link element
       const link = document.createElement('a');
       link.href = resumePath;
-  
+      console.log(resumePath)
       // Set the download attribute with the desired file name
-      link.download = 'Sharad_resume.pdf';
+      link.download = 'Sharad_resume_download.pdf';
   
       // Append the link to the document body
       document.body.appendChild(link);
@@ -82,7 +83,8 @@ const Hero = () => {
             </div>
             <div className='resume_section'>
             <div className="resume_button">
-            <motion.button className='resume__button' whileHover={{scale : 1.09}}  onClick={handleDownload}    whileTap={{ scale: 0.9 }}  whileInView={{opacity : [0,0.5,1],scale : [1]}}>Resume</motion.button>
+            <motion.button className='resume__button' whileHover={{scale : 1.09}}     whileTap={{ scale: 0.9 }}  whileInView={{opacity : [0,0.5,1],scale : [1]}}>  
+            <a href={resume} download='Sharad_Resume.pdf' style={{textDecoration:'none' }}>  Resume </a></motion.button>
           </div > 
             <div className='arrow'>
             <img src={arrow} alt="arrow"  />

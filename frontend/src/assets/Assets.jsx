@@ -19,7 +19,7 @@ import premiere from './premiere.svg'
 import openhum from './open_humberger.svg'
 import closehum from './close_humberger2.svg'
 import github from './github 1.svg'
-import resume from './Sharad Resume.pdf'
+import resume from './SharadResume.pdf'
 
 
 

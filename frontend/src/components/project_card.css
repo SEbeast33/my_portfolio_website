@@ -7,6 +7,10 @@
     border-radius: 0.6rem;
     border: 1.2px solid #EFEDED;
     box-shadow: 0.4px 3px 8px 1.5px rgba(203, 161, 229, 0.86);
+    flex-shrink: 0;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
 }
 
 .project__card{
@@ -107,6 +111,13 @@ letter-spacing: 0.01rem;
 @media screen and (max-width: 962px){
     .card_container{
         margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .card_container{
+        margin-left: 0.85rem;
+        margin-right: 0.85rem;
     }
 }
 

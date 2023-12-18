@@ -32,13 +32,15 @@ const App = () => {
 
     <>
      {isLoading? (<Loder/>):
+      
      <>
-      <Header/>
+     <>
+     <Header/></>
       {/* <Text/> */}
-      <Hero/>
+     <><Hero/>
       <Servicei/>
       <Projects/>
-      <Skills/>
+      <Skills/></> 
       
     </>
     }

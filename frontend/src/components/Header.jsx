@@ -150,17 +150,17 @@ return (
 
             </motion.div>
             <motion.div  whileTap={()=>{setMobileNavOpen(false)}}    className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='home' spy={true} offset={-50} duration={500} >home</Link></motion.div>
-            <motion.div whileTap={()=>{setMobileNavOpen(false)}}    className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='about' spy={true} offset={-50} duration={500}>About us</Link></motion.div>
-            <motion.div whileTap={()=>{setMobileNavOpen(false)}}    className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='projects' spy={true} offset={-50} duration={500}>Projects</Link></motion.div>
-            <motion.div whileTap={()=>{setMobileNavOpen(false)}}    className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='skills' spy={true} offset={-50} duration={500}>Skills</Link></motion.div>
+            <motion.div whileTap={()=>{setMobileNavOpen(false)}}    className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='about' spy={true} offset={-40} duration={500}>About us</Link></motion.div>
+            <motion.div whileTap={()=>{setMobileNavOpen(false)}}    className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='projects' spy={true} offset={-40} duration={500}>Projects</Link></motion.div>
+            <motion.div whileTap={()=>{setMobileNavOpen(false)}}    className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='skills' spy={true} offset={-30} duration={500}>Skills</Link></motion.div>
             <motion.div whileTap={()=>{setMobileNavOpen(false)}}    className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='projects' spy={true} offset={-50} duration={500}>Contact me</Link></motion.div>
           </motion.div>
 
           <div className="nav_components">
             <motion.div className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='home' spy={true} offset={-50} duration={500} >Home</Link></motion.div>
             <motion.div className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='about' spy={true} offset={-70} duration={500} >Services</Link></motion.div>
-            <motion.div className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='projects' spy={true} offset={-50} duration={500} >Projects</Link></motion.div>
-            <motion.div className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='skills'spy={true}  offset={-100} duration={500} >Skills</Link></motion.div>
+            <motion.div className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='projects' spy={true} offset={-7} duration={500} >Projects</Link></motion.div>
+            <motion.div className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='skills'spy={true}  offset={-5} duration={500} >Skills</Link></motion.div>
             <motion.div className="navitems" whileHover={{scale :1.1,y:-5}}><Link activeClass='active' to='projects'spy={true}  offset={-50} duration={500} >Contact me</Link></motion.div>
           </div>
           <div className="letstalkbutton">
